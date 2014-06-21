@@ -211,7 +211,6 @@ Object.defineProperty(exports, "defaults", {get: function () {
                     || process.getuid() !== 0
     , usage : false
     , user : process.platform === "win32" ? 0 : "nobody"
-    , username : ""
     , userconfig : path.resolve(home, ".npmrc")
     , umask: "022"
     , version : false
@@ -317,14 +316,12 @@ exports.types =
   , "unsafe-perm" : Boolean
   , usage : Boolean
   , user : [Number, String]
-  , username : String
   , userconfig : path
   , umask: Octal
   , version : Boolean
   , versions : Boolean
   , viewer: String
   , _exit : Boolean
-  , _password: String
   }
 
 exports.shorthands =
